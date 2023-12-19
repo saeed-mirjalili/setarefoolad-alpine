@@ -1,0 +1,42 @@
+.form-login{
+    width: 23%;
+    margin: auto;
+    background: #152035;
+    border-radius: 15px;
+    padding: 3%;
+}
+
+.auth-auto{
+    border: none;
+    color:silver;
+    border-radius:5px;
+    padding:10px;
+    width: fit-content;
+    box-shadow:0 1px 2px 0 rgb(0 0 0 / .05);
+    background-color: #24324c;
+    display: flex;
+    outline: none;
+}
+
+.auth-auto a{
+color: #e5e7eb;
+text-decoration: none;
+}
+
+.form-login-input{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    outline: none;
+}
+
+.remind-pass{
+    text-decoration: none;
+    color:silver;
+    margin: auto 10px;
+}
+
+button.auth-auto{
+    font-family: body;
+    font-size: 0.8vw;
+}
