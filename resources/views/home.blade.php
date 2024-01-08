@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+
+
 @section('body')
         
 
@@ -164,7 +166,7 @@
         <div class="slider__info">
           <h2 x-ref="text1">پروفیل 20*20</h2>
           <p>پروفیل 20*20 با ضخامت 1.8 میل</p>
-          <div class="more" @click="$store.darkMode.toggle();$store.darkMode.Array.push($refs.text1.innerHTML)">اضافه به سبد</div>
+          <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text1.innerHTML)">اضافه به سبد</div>
         </div>
       </div>
 
@@ -175,7 +177,7 @@
         <div class="slider__info">
           <h2 x-ref="text2">سپری</h2>
           <p>سپری با ضخامت 1.8 میل</p>
-          <div class="more" @click="$store.darkMode.toggle();$store.darkMode.Array.push($refs.text2.innerHTML)">اضافه به سبد</div>
+          <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text2.innerHTML)">اضافه به سبد</div>
         </div>
       </div>
       <div class="slider__item">
@@ -183,7 +185,7 @@
         <div class="slider__info">
           <h2 x-ref="text3">پروفیل 30*50</h2>
           <p>پروفیل 30*50 با ضخامت 2 میل</p>
-          <div class="more" @click="$store.darkMode.toggle();$store.darkMode.Array.push($refs.text3.innerHTML)">اضافه به سبد</div>
+          <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text3.innerHTML)">اضافه به سبد</div>
         </div>
       </div>
       <div class="slider__item">
@@ -191,7 +193,7 @@
         <div class="slider__info">
           <h2 x-ref="text4">زد</h2>
           <p>پروفیل زد با ضخامت 2 میل</p>
-          <div class="more" @click="$store.darkMode.toggle();$store.darkMode.Array.push($refs.text4.innerHTML)">اضافه به سبد</div>
+          <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text4.innerHTML)">اضافه به سبد</div>
         </div>
       </div>
       <div class="slider__item">
@@ -199,7 +201,7 @@
         <div class="slider__info">
           <h2 x-ref="text5">پروفیل 50*50</h2>
           <p>پروفیل 50*50 با ضخامت 2 میل</p>
-          <div class="more" @click="$store.darkMode.toggle();$store.darkMode.Array.push($refs.text5.innerHTML)">اضافه به سبد</div>
+          <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text5.innerHTML)">اضافه به سبد</div>
         </div>
       </div>
       <div class="slider__item">
@@ -207,7 +209,7 @@
         <div class="slider__info">
           <h2 x-ref="text6">ورق شیت</h2>
           <p>ورق شیت با ضخامت 2 میل</p>
-          <div class="more" @click="$store.darkMode.toggle();$store.darkMode.Array.push($refs.text6.innerHTML)">اضافه به سبد</div>
+          <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text6.innerHTML)">اضافه به سبد</div>
         </div>
       </div>
       <div class="slider__item">
@@ -215,7 +217,7 @@
         <div class="slider__info">
           <h2 x-ref="text7">لوله</h2>
           <p>لوله با ضخامت 2 میل</p>
-          <div class="more" @click="$store.darkMode.toggle();$store.darkMode.Array.push($refs.text7.innerHTML)">اضافه به سبد</div>
+          <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text7.innerHTML)">اضافه به سبد</div>
         </div>
       </div>
       <div class="slider__item">
@@ -223,7 +225,7 @@
         <div class="slider__info">
           <h2 x-ref="text8">کم فرانسه</h2>
           <p>کم فرانسه با ضخامت 2 میل</p>
-          <div class="more" @click="$store.darkMode.toggle();$store.darkMode.Array.push($refs.text8.innerHTML)">اضافه به سبد</div>
+          <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text8.innerHTML)">اضافه به سبد</div>
         </div>
       </div>
     </div>

@@ -111,14 +111,48 @@ input:-webkit-autofill:focus {
 
 
 
+/*table*/
+table {
+  /* font-family: Arial, Helvetica, sans-serif; */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+}
+
+ tr:nth-child(even){background-color: #1d3953;}
+
+ tr:hover {background-color: #183753;}
+
+ th {
+  /* padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white; */
+}
+
+/*end table*/
+
+
+
+
+
+
+
+
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?7xsq22');
-  src:  url('../fonts/icomoon.eot?7xsq22#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?7xsq22') format('truetype'),
-    url('../fonts/icomoon.woff?7xsq22') format('woff'),
-    url('../fonts/icomoon.svg?7xsq22#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?gj1e5o');
+  src:  url('../fonts/icomoon.eot?gj1e5o#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?gj1e5o') format('truetype'),
+    url('../fonts/icomoon.woff?gj1e5o') format('woff'),
+    url('../fonts/icomoon.svg?gj1e5o#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -183,6 +217,9 @@ input:-webkit-autofill:focus {
 }
 .icon-instagram:before {
   content: "\e902";
+}
+.icon-cancel:before {
+  content: "\e910";
 }
 .icon-circle:before {
   content: "\e90e";

@@ -45,31 +45,46 @@
             </div>
             
         </div>
+
         <div class="navbar">
             <ul>
                 <li><a href="/">صفحه اصلی</a></li>
                 <li><a href="#news">مقالات</a></li>
                 <li><a href="/about">درباره ما</a></li>
                 <li><a href="#about">تماس با ما</a></li>
+                
             </ul>
             <div style="display:flex;" class="navbar-login">
                     @if (Route::has('login'))
                         @auth()
-                            <div style="position: relative;" x-data="{ open: false }" x-on:click="open = ! open" >
+                            <div style="position: relative;" x-data="{open:false}">
                                 
-                                    <span class="icon-basket"></span>
-                                    <div x-text="$store.darkMode.on" class="basket-num">
-                                    </div>
-                                    <div x-show="open && $store.darkMode.Array.length != 0" x-transition class="tooltip-basket">
-                                        <div>موارد انتخابی شما:</div>
-                                        <template x-for="color in $store.darkMode.Array">
-                                            
-                                              <div>- <span x-text="color"></span></div>
-                                            
-                                        </template>
-                                        <div class="more">تایید</div>
-                                    </div>
+                                <span class="icon-basket"  x-on:click="open = ! open"></span>
+                                <div x-text="$store.perorder.on" class="basket-num">
+                                </div>
+                                <div x-show="open && $store.perorder.Arraya.length != 0" x-transition class="tooltip-basket">
+                                    <div>موارد انتخابی شما:</div>
+                                        {{Auth::user()->email;}}
+                                        <table>
+                                            <tr>
+                                                <th>کالا</th>
+                                                <th>حذف</th>
+                                            </tr>
+                                            <template x-for="(name,index) in $store.perorder.Arraya" :key="index">
+                                                <tr>
+                                                    <td x-text="name" ></td>
+                                                    <td class="icon-cancel" style="color:#955858;" @click="$store.perorder.on--;$store.perorder.Arraya.splice(index, 1)"></td>
+                                                </tr>
+                                            </template>
+                                        </table>
+                                    <div class="more" x-on:click="$store.perorder.sendRequest()" x-show="!$store.perorder.turn">تایید</div> 
+                                    <p class="more" x-show="$store.perorder.turn">
+                                        ادامه خرید
+                                    </p>
+
                                 
+                                </div>
+                                <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
                             </div>
                             
                             <div>
