@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\order;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+
 
 class SellController extends Controller
 {
@@ -30,6 +32,14 @@ class SellController extends Controller
     }
     public function show(Request $request)
     {
-        //
+        $user = User::find(4);
+        
+        $orders = $user->order;
+
+
+        return view('/sell' , compact('orders'));
+        // return $orders;
+
+        // return  redirect('/sell')->with('data', $orders);
     }
 }

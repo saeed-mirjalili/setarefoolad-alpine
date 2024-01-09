@@ -13,4 +13,9 @@ class order extends Model
         'order-name',
         
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'id');
+    }
 }

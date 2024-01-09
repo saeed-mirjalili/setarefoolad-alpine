@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->string('email');
-            $table->longText('order-name');
-            $table->longText('order-weight')->nullable();
+            $table->longText('order_name');
+            $table->longText('order_weight')->nullable();
             $table->timestamps();
         });
     }
