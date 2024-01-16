@@ -78,9 +78,9 @@
                                             </template>
                                         </table>
                                     <div class="more" x-on:click="$store.perorder.sendRequest()" x-show="!$store.perorder.turn">تایید</div> 
-                                    <p class="more" x-show="$store.perorder.turn">
+                                    <a href="/sell" class="more" style="color: coral;" x-show="$store.perorder.turn">
                                         ادامه خرید
-                                    </p>
+                                    </a>
 
                                 
                                 </div>
@@ -122,15 +122,13 @@
         
         @yield('body')
         <div class="up-footer">
-            <div style="flex-grow:3;text-align:end;">
-                <img src="/img/logo/st-logo2.png"/>
+            <div style="">
+                <img src="/img/logo/st-logo2.png" style="width: 10vw;"/>
             </div>
             <div style="flex-grow:8;">
                 <svg height="5" width="100%">
                     <line x1="0" y1="0" x2="100%" y2="0" style="stroke:#c1c1c1;stroke-width:1" />
                 </svg>
-            </div>
-            <div style="flex-grow:3;">
             </div>
         </div>
 

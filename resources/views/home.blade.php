@@ -66,25 +66,25 @@
                 <div>تماس با واحد فروش</div>
                 <p>ارتباط با مشاوران فروش جهت مشاوره و خرید از طریق تماس با شماره 91001020-051 امکان پذیر است</p>
             </div>
-            <image src="img/svg/fleshOfogh.svg"/>
+            <div class="feleshofogh-svg"><image src="img/svg/fleshOfogh.svg"/></div>
             <div class="div-svg">
                 <image src="img/svg/tik.svg" class="five-svg"/>
                 <div>صدور پیش فاکتور</div>
                 <p>30 دقیقه بعد مشاور فروش پیش فاکتور را ارسال می کند و در صورت زمان بر بودن درخواست، سریعا به اطلاع شما می رسد.</p>
             </div>
-            <image src="img/svg/fleshOfogh.svg"/>
+            <div class="feleshofogh-svg"><image src="img/svg/fleshOfogh.svg"/></div>
             <div class="div-svg">
                 <image src="img/svg/truck.svg" class="five-svg"/>
                 <div>بارگیری و حمل</div>
                 <p>کالاهای تایید کیفیت شده، پس از بارگیری، براساس نرخ مصوب و مورد تایید شما، به مقصد ارسال می شود.</p>
             </div>
-            <image src="img/svg/fleshOfogh.svg"/>
+            <div class="feleshofogh-svg"><image src="img/svg/fleshOfogh.svg"/></div>
             <div class="div-svg">
                 <image src="img/svg/pay.svg" class="five-svg"/>
                 <div>تسویه حساب</div>
                 <p>براساس مفاد پیش فاکتور و توافق حاصله، تسویه حساب به صورت نقدی یا اعتباری انجام می شود.</p>
             </div>
-            <image src="img/svg/fleshOfogh.svg"/>
+            <div class="feleshofogh-svg"><image src="img/svg/fleshOfogh.svg"/></div>
             <div class="div-svg">
                 <image src="img/svg/rasmy.svg" class="five-svg"/>
                 <div>صدور فاکتور</div>
@@ -116,12 +116,20 @@
         </div>
 
 
-        <div style="text-align: center;margin: 75px auto;">
-            <svg height="5" width="20%">
-                <line x1="10" y1="0" x2="100%" y2="0" style="stroke: #ffffff;stroke-width: 1;"></line>
-            </svg> به همین راحتی خرید کنید<svg height="5" width="20%">
-                <line x1="0" y1="0" x2="100%" y2="0" style="stroke: #ffffff;stroke-width: 1;"></line>
-            </svg>
+        <div style="width:70%;display:flex;text-align: center;margin: 2vw auto;justify-content: center;">
+            <div>
+                <svg height="5" width="100%">
+                    <line x1="0" y1="0" x2="100%" y2="0" style="stroke: #ffffff;stroke-width: 1;"></line>
+                </svg>
+            </div>
+            <div style="min-width: fit-content;">
+                به همین راحتی خرید کنید
+            </div>
+            <div>
+                <svg height="5" width="100%">
+                    <line x1="0" y1="0" x2="100%" y2="0" style="stroke: #ffffff;stroke-width: 1;"></line>
+                </svg>
+            </div>
         </div>
 
 
@@ -131,25 +139,25 @@
                 <div>سفارش آنلاین</div>
                 <p>سفارش آنلاین، به شما امکان می‌دهد تا به راحتی و با اطمینان کامل، محصولات مورد نیاز خود را از طریق اینترنت سفارش دهید.</p>
             </div>
-            <image src="img/svg/fleshOfogh.svg"/>
+            <div class="feleshofogh-svg"><image src="img/svg/fleshOfogh.svg"/></div>
             <div class="div-svg">
                 <image src="img/svg/phone.svg" class="five-svg"/>
                 <div>تماس ما با شما</div>
                 <p>پس از ثبت سفارش کارشناسان ما بمنظور نهایی شدن سفارش و بررسی روش پرداخت، در اسرع وقت با شما تماس میگیرند.</p>
             </div>
-            <image src="img/svg/fleshOfogh.svg"/>
+            <div class="feleshofogh-svg"><image src="img/svg/fleshOfogh.svg"/></div>
             <div class="div-svg">
                 <image src="img/svg/truck.svg" class="five-svg"/>
                 <div>بارگیری و حمل</div>
                 <p>کالاهای تایید کیفیت شده، پس از بارگیری، براساس نرخ مصوب و مورد تایید شما، به مقصد ارسال می شود.</p>
             </div>
-            <image src="img/svg/fleshOfogh.svg"/>
+            <div class="feleshofogh-svg"><image src="img/svg/fleshOfogh.svg"/></div>
             <div class="div-svg">
                 <image src="img/svg/pay.svg" class="five-svg"/>
                 <div>تسویه حساب</div>
                 <p>براساس مفاد پیش فاکتور و توافق حاصله، تسویه حساب به صورت نقدی یا اعتباری انجام می شود.</p>
             </div>
-            <image src="img/svg/fleshOfogh.svg"/>
+            <div class="feleshofogh-svg"><image src="img/svg/fleshOfogh.svg"/></div>
             <div class="div-svg">
                 <image src="img/svg/rasmy.svg" class="five-svg"/>
                 <div>صدور فاکتور</div>
@@ -161,75 +169,72 @@
   <div class="slider" x-data="{start: true, end: false}">
     <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
       
-      <div class="slider__item">
-        <img class="slider__image" src="img/Products/1.JPG" alt="Image">
-        <div class="slider__info">
-          <h2 x-ref="text1">پروفیل 20*20</h2>
-          <p>پروفیل 20*20 با ضخامت 1.8 میل</p>
-          <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text1.innerHTML)">اضافه به سبد</div>
+        <div class="slider__item">
+            <img class="slider__image" src="img/Products/1.JPG" alt="Image">
+            <div class="slider__info">
+            <h2 x-ref="text1">پروفیل 20*20</h2>
+            <p>پروفیل 20*20 با ضخامت 1.8 میل</p>
+            <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text1.innerHTML);$el.classList.add('avoid-clicks')">اضافه به سبد</div>
+            </div>
         </div>
-      </div>
-
-
-
-      <div class="slider__item">
-        <img class="slider__image" src="img/Products/2.JPG" alt="Image">
-        <div class="slider__info">
-          <h2 x-ref="text2">سپری</h2>
-          <p>سپری با ضخامت 1.8 میل</p>
-          <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text2.innerHTML)">اضافه به سبد</div>
+        <div class="slider__item">
+            <img class="slider__image" src="img/Products/2.JPG" alt="Image">
+            <div class="slider__info">
+            <h2 x-ref="text2">سپری</h2>
+            <p>سپری با ضخامت 1.8 میل</p>
+            <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text2.innerHTML);$el.classList.add('avoid-clicks')">اضافه به سبد</div>
+            </div>
         </div>
-      </div>
-      <div class="slider__item">
-        <img class="slider__image" src="img/Products/3.JPG" alt="Image">
-        <div class="slider__info">
-          <h2 x-ref="text3">پروفیل 30*50</h2>
-          <p>پروفیل 30*50 با ضخامت 2 میل</p>
-          <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text3.innerHTML)">اضافه به سبد</div>
+        <div class="slider__item">
+            <img class="slider__image" src="img/Products/3.JPG" alt="Image">
+            <div class="slider__info">
+            <h2 x-ref="text3">پروفیل 30*50</h2>
+            <p>پروفیل 30*50 با ضخامت 2 میل</p>
+            <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text3.innerHTML);$el.classList.add('avoid-clicks')">اضافه به سبد</div>
+            </div>
         </div>
-      </div>
-      <div class="slider__item">
-        <img class="slider__image" src="img/Products/4.JPG" alt="Image">
-        <div class="slider__info">
-          <h2 x-ref="text4">زد</h2>
-          <p>پروفیل زد با ضخامت 2 میل</p>
-          <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text4.innerHTML)">اضافه به سبد</div>
+        <div class="slider__item">
+            <img class="slider__image" src="img/Products/4.JPG" alt="Image">
+            <div class="slider__info">
+            <h2 x-ref="text4">زد</h2>
+            <p>پروفیل زد با ضخامت 2 میل</p>
+            <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text4.innerHTML);$el.classList.add('avoid-clicks')">اضافه به سبد</div>
+            </div>
         </div>
-      </div>
-      <div class="slider__item">
-        <img class="slider__image" src="img/Products/5.JPG" alt="Image">
-        <div class="slider__info">
-          <h2 x-ref="text5">پروفیل 50*50</h2>
-          <p>پروفیل 50*50 با ضخامت 2 میل</p>
-          <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text5.innerHTML)">اضافه به سبد</div>
+        <div class="slider__item">
+            <img class="slider__image" src="img/Products/5.JPG" alt="Image">
+            <div class="slider__info">
+            <h2 x-ref="text5">پروفیل 50*50</h2>
+            <p>پروفیل 50*50 با ضخامت 2 میل</p>
+            <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text5.innerHTML);$el.classList.add('avoid-clicks')">اضافه به سبد</div>
+            </div>
         </div>
-      </div>
-      <div class="slider__item">
-        <img class="slider__image" src="img/Products/6.JPG" alt="Image">
-        <div class="slider__info">
-          <h2 x-ref="text6">ورق شیت</h2>
-          <p>ورق شیت با ضخامت 2 میل</p>
-          <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text6.innerHTML)">اضافه به سبد</div>
+        <div class="slider__item">
+            <img class="slider__image" src="img/Products/6.JPG" alt="Image">
+            <div class="slider__info">
+            <h2 x-ref="text6">ورق شیت</h2>
+            <p>ورق شیت با ضخامت 2 میل</p>
+            <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text6.innerHTML);$el.classList.add('avoid-clicks')">اضافه به سبد</div>
+            </div>
         </div>
-      </div>
-      <div class="slider__item">
-        <img class="slider__image" src="img/Products/7.JPG" alt="Image">
-        <div class="slider__info">
-          <h2 x-ref="text7">لوله</h2>
-          <p>لوله با ضخامت 2 میل</p>
-          <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text7.innerHTML)">اضافه به سبد</div>
+        <div class="slider__item">
+            <img class="slider__image" src="img/Products/7.JPG" alt="Image">
+            <div class="slider__info">
+            <h2 x-ref="text7">لوله</h2>
+            <p>لوله با ضخامت 2 میل</p>
+            <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text7.innerHTML);$el.classList.add('avoid-clicks')">اضافه به سبد</div>
+            </div>
         </div>
-      </div>
-      <div class="slider__item">
-        <img class="slider__image" src="img/Products/8.JPG" alt="Image">
-        <div class="slider__info">
-          <h2 x-ref="text8">کم فرانسه</h2>
-          <p>کم فرانسه با ضخامت 2 میل</p>
-          <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text8.innerHTML)">اضافه به سبد</div>
+        <div class="slider__item">
+            <img class="slider__image" src="img/Products/8.JPG" alt="Image">
+            <div class="slider__info">
+            <h2 x-ref="text8">کم فرانسه</h2>
+            <p>کم فرانسه با ضخامت 2 میل</p>
+            <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.text8.innerHTML);$el.classList.add('avoid-clicks')">اضافه به سبد</div>
+            </div>
         </div>
-      </div>
     </div>
-    <div style="margin:auto 10%;">
+    <div style="margin:auto 2%;text-align: center;">
         <div>محصولات</div>
     
         <div class="slider__nav">

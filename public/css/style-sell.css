@@ -1,0 +1,43 @@
+.menuProfile{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.menuProfile div{
+    padding: 1vw;
+    border-radius: 5px;
+    width: 19%;
+    background-color: rgb(25, 56, 83);
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menuProfile div:nth-child(1) span{
+    background-color: darkgreen;
+    padding: 0.3vw;
+    font-size: 2vw;
+    border-radius: 0.5vw;
+}
+.menuProfile div:nth-child(2) span{
+    background-color: rgb(133 129 31);
+    padding: 0.3vw;
+    font-size: 2vw;
+    border-radius: 0.5vw;
+}
+.menuProfile div:nth-child(3) span{
+    background-color: rgb(184, 51, 42);
+    padding: 0.3vw;
+    font-size: 2vw;
+    border-radius: 0.5vw;
+}
+.menuProfile div:nth-child(4) span{
+    background-color: rgb(39 129 133);
+    padding: 0.3vw;
+    font-size: 2vw;
+    border-radius: 0.5vw;
+}

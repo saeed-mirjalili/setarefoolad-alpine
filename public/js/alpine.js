@@ -13,7 +13,8 @@ document.addEventListener('alpine:init', () => {
                 // handle error
             });
         }
-    })})
+    })
+})
 
 
 
