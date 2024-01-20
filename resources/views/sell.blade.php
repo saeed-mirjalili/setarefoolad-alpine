@@ -16,44 +16,49 @@
         سفارشات تایید نشده
     </div>
     <div>
-    <span class="icon-profile"></span>  
+        <span class="icon-profile"></span>  
         مشخصات
     </div>
     <div>
-    <span class="icon-profile"></span>  
+        <span class="icon-profile"></span>  
         محصولات
     </div>
 </div>
 
 <div style="width:70%;margin:0px auto;">
-    <table>
-        <tr>
-            <th>کالا</th>
-            <th>تاریخ</th>
-            <th>وزن</th>
-        </tr>
-        <form method="POST" action="{{ route('orders.update') }}">
-        @csrf
-        @foreach($orders as $ordernull)
-            @if($ordernull->order_weight == null)
-                <tr>
-                    <td>
-                        {{ $ordernull->order_name }}
-                    </td>
-                    <td>
-                        {{ $ordernull->created_at }}
-                    </td>
-                        <!-- <input type="text" value="{{$ordernull->id}}" class="search-input" hidden> -->
-                    <td>
-                        <input type="text" name="{{ $loop->iteration }}" class="search-input">
-                    </td>
-                </tr>
-            @endif
-        @endforeach
-        <input type="submit" value="ssss">
-        </form>
-    </table>
-    <a href="/" class="more">تایید نهایی</a>
+        <table>
+            <tr>
+                <th>کالا</th>
+                <th>تاریخ</th>
+                <th>وزن</th>
+            </tr>
+            <form method="POST" action="{{ route('orders.update') }}">
+            @csrf
+            @foreach($orders as $ordernull)
+                @if($ordernull->order_weight == null)
+                
+                    <tr>
+                        <td>
+                            {{ $ordernull->order_name }}
+                        </td>
+                        <td>
+                            {{ $ordernull->created_at }}
+                        </td>
+                            <input type="text" name="orders[]" value="{{$ordernull->id}}" class="search-input" hidden>
+                        <td>
+                            <input type="text" name="{{ $ordernull->id }}" class="search-input">
+                        </td>
+                    </tr>
+                @endif
+            @endforeach
+            <tr>
+                <td></td>
+                <td><input type="submit" value="submit"></td>
+                <td></td>
+            </tr>
+            </form>
+        </table>
+
 </div>
 
 

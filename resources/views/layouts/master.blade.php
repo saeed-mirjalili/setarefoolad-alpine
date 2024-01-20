@@ -78,7 +78,7 @@
                                             </template>
                                         </table>
                                     <div class="more" x-on:click="$store.perorder.sendRequest()" x-show="!$store.perorder.turn">تایید</div> 
-                                    <a href="/sell" class="more" style="color: coral;" x-show="$store.perorder.turn">
+                                    <a href="/sell" class="more" style="color: coral;"  x-show="$store.perorder.turn">
                                         ادامه خرید
                                     </a>
 

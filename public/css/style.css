@@ -455,6 +455,19 @@ td, th {
   margin: 1% auto;
 }
 
+input[type=submit] {
+  font-size: 1vw;
+  color: coral;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  width: fit-content;
+  /* text-align: center; */
+  margin: 1% auto;
+  background: none;
+  border: none;
+}
+
 
 
   .up-footer {
