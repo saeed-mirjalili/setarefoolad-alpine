@@ -3,7 +3,7 @@
 use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SellController;
-use App\Http\Controllers\SubmitOrderController;
+use App\Http\Controllers\OldOrderController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -39,7 +39,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
     Route::post('/sell', [SellController::class, 'baseic']);
     Route::get('/sell', [SellController::class, 'show']);
-    Route::post('/orderUpdate', [SubmitOrderController::class, 'show'])->name('orders.update');
+    Route::post('/orderUpdate', [SellController::class, 'update'])->name('orders.update');
+    Route::get('/oldOrder', [OldOrderController::class, 'show'])->name('order.old');
 
 });
 

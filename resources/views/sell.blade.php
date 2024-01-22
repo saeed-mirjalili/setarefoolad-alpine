@@ -9,11 +9,11 @@
 <div class="menuProfile">
     <div>
         <span class="icon-cabinet"></span>
-        سفارشات گذشته
+        <a href="/oldOrder">سفارشات گذشته</a>
     </div>
     <div>
         <span class="icon-clipboard"></span>    
-        سفارشات تایید نشده
+        <a href="/sell">سفارشات تایید نشده</a>
     </div>
     <div>
         <span class="icon-profile"></span>  
@@ -53,9 +53,7 @@
                 </tr>
             @endforelse
             <tr>
-                <td></td>
-                <td><input type="submit" value="submit"></td>
-                <td></td>
+                <td  colspan="3"><input type="submit" value="تایید وزن"></td>
             </tr>
             </form>
         </table>

@@ -27,4 +27,11 @@ class SellController extends Controller
         $orders = $user->order->whereNull('order_weight');
         return view('/sell' , compact('orders'));
     }
+    public function update(Request $request)
+    {
+        foreach($request->orders as $order) {
+            Order::whereId($order)->update(['order_weight' => $request->get($order)]);
+        }
+        return redirect('/');
+    }
 }
