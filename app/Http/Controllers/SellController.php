@@ -24,7 +24,7 @@ class SellController extends Controller
     public function show(Request $request)
     {
         $user = User::find(Auth::user()->id);
-        $orders = $user->order;
+        $orders = $user->order->whereNull('order_weight');
         return view('/sell' , compact('orders'));
     }
 }

@@ -34,9 +34,7 @@
             </tr>
             <form method="POST" action="{{ route('orders.update') }}">
             @csrf
-            @foreach($orders as $ordernull)
-                @if($ordernull->order_weight == null)
-                
+            @forelse($orders as $ordernull)
                     <tr>
                         <td>
                             {{ $ordernull->order_name }}
@@ -49,8 +47,11 @@
                             <input type="text" name="{{ $ordernull->id }}" class="search-input">
                         </td>
                     </tr>
-                @endif
-            @endforeach
+                @empty  
+                <tr>  
+                    <td colspan="3">شما کالایی برای تایید وزن در سبد خود ندارید.لطفا از صفحه اول کالاهای خود را انتخاب و از منوی بالای صفحه سبد خود را تایید کنید.</td>
+                </tr>
+            @endforelse
             <tr>
                 <td></td>
                 <td><input type="submit" value="submit"></td>
