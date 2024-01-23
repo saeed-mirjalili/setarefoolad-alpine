@@ -32,6 +32,6 @@ class SellController extends Controller
         foreach($request->orders as $order) {
             Order::whereId($order)->update(['order_weight' => $request->get($order)]);
         }
-        return redirect('/');
+        return redirect('/')->with('status', 'با تشکر از سفارش شما.لطفا منتظر تماس کارشناسان ما باشید.');
     }
 }

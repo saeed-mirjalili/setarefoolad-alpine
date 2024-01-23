@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -13,6 +13,12 @@
 
     </head>
     <body class="antialiased">
+
+    @if (session('status'))
+        <div class="session-status">
+            <span class="icon-broadcast"></span>  {{ session('status') }}
+        </div>
+    @endif
 
 
         <div class="top-of-navbar">
@@ -54,7 +60,7 @@
                 <li><a href="#about">تماس با ما</a></li>
                 
             </ul>
-            <div style="display:flex;" class="navbar-login">
+            <div style="display:flex;margin: 0px 1rem;" class="navbar-login">
                     @if (Route::has('login'))
                         @auth()
                             <div style="position: relative;" x-data="{open:false}">
@@ -122,7 +128,7 @@
         
         @yield('body')
         <div class="up-footer">
-            <div style="">
+            <div>
                 <img src="/img/logo/st-logo2.png" style="width: 10vw;"/>
             </div>
             <div style="flex-grow:8;">
