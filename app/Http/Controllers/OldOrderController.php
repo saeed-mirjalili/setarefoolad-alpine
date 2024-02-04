@@ -15,14 +15,7 @@ class OldOrderController extends Controller
         $orders = $user->order
             ->whereNotNull('order_weight')
             ->groupBy('created_at');
-            
         
         return view('/oldOrder' , compact('orders'));
-
-
-        // $results = MyModel::select(DB::raw('DATE(created_at) AS created_date'), DB::raw('COUNT(*) AS count'))
-        //         ->groupBy('created_date')
-        //         ->orderBy('created_date', 'DESC')
-        //         ->get();
     }
 }

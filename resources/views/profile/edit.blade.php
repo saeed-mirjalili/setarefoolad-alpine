@@ -1,29 +1,67 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Profile') }}
-        </h2>
-    </x-slot>
+@extends('layouts.master')
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
-            <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
-                <div class="max-w-xl">
+@section('style')
+    <link href="css/style-login.css" rel="stylesheet" />
+    <link href="css/style-sell.css" rel="stylesheet" />
+@endsection
+
+@section('body')
+
+@include('profile.user.menu')
+
+
+    <div class="form-login">
+        <div class="">
+            <div class="">
+                <div class="">
                     @include('profile.partials.update-profile-information-form')
                 </div>
             </div>
 
-            <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
-                <div class="max-w-xl">
+            <div style="width:70%;display:flex;text-align: center;margin: 2vw auto;justify-content: center;align-items: baseline;">
+                <div>
+                    <svg height="5" width="100%">
+                        <line x1="0" y1="0" x2="100%" y2="0" style="stroke: #ffffff;stroke-width: 1;"></line>
+                    </svg>
+                </div>
+                <div style="min-width: fit-content;">
+                    تغییر پسورد
+                </div>
+                <div>
+                    <svg height="5" width="100%">
+                        <line x1="0" y1="0" x2="100%" y2="0" style="stroke: #ffffff;stroke-width: 1;"></line>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="">
                     @include('profile.partials.update-password-form')
                 </div>
             </div>
 
-            <div class="p-4 sm:p-8 bg-white shadow sm:rounded-lg">
-                <div class="max-w-xl">
+            <div style="width:70%;display:flex;text-align: center;margin: 2vw auto;justify-content: center;align-items: baseline;">
+                <div>
+                    <svg height="5" width="100%">
+                        <line x1="0" y1="0" x2="100%" y2="0" style="stroke: #ffffff;stroke-width: 1;"></line>
+                    </svg>
+                </div>
+                <div style="min-width: fit-content;">
+                    حذف اکانت
+                </div>
+                <div>
+                    <svg height="5" width="100%">
+                        <line x1="0" y1="0" x2="100%" y2="0" style="stroke: #ffffff;stroke-width: 1;"></line>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="">
                     @include('profile.partials.delete-user-form')
                 </div>
             </div>
         </div>
     </div>
-</x-app-layout>
+
+@endsection

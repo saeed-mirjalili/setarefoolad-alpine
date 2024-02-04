@@ -63,11 +63,11 @@
             <div style="display:flex;margin: 0px 1rem;" class="navbar-login">
                     @if (Route::has('login'))
                         @auth()
-                            <div style="position: relative;" x-data="{open:false}">
-                                
-                                <span class="icon-basket"  x-on:click="open = ! open"></span>
-                                <div x-text="$store.perorder.on" class="basket-num">
-                                </div>
+                            <div style="position: relative;" x-cloak x-data="{open:false}">
+                                <div> 
+                                    <span class="icon-basket"  x-on:click="open = ! open"></span>
+                                    <div x-text="$store.perorder.on" class="basket-num"></div>
+                                </div> 
                                 <div x-show="open && $store.perorder.Arraya.length != 0" x-transition class="tooltip-basket">
                                     <div>موارد انتخابی شما:</div>
                                         {{Auth::user()->email;}}
@@ -89,8 +89,8 @@
                                     </a>
 
                                 
+                                    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
                                 </div>
-                                <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
                             </div>
                             
                             <div>
