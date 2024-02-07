@@ -7,13 +7,13 @@
 
 
 <div class="matn-asli">
-    <div style="width:26%;">
+    <div>
         <object data="img/svg/factory3.svg"></object>
     </div>
-    <div style="color:silver;">
-        <p style="margin:0px;">ستاره فولاد آسیا</p>
-        <p style="font-size:2vw;margin:0px auto;">کارخانه تولید لوله و پروفیل , پیشرو در صادرات</p>
-        <p style="font-size:2vw;margin:0px auto;">کارآفرین نمونه سال 1401</p>
+    <div>
+        <h1>ستاره فولاد آسیا</h1>
+        <p>کارخانه تولید لوله و پروفیل , پیشرو در صادرات
+        <br>کارآفرین نمونه سال 1401</p>
     </div>
 
 </div>
@@ -32,14 +32,14 @@
 
 
 
-<div style="display:flex;display: flex;align-items: center; justify-content: space-evenly;width: 70%;margin: auto;margin-bottom: 4%;">
-    <div style="width:46%;font-size:0.8vw;">
+<div class="why">
+    <div style="">
         <h1>چرا ستاره فولاد؟</h1>
         <p> تجربه بالا، سرعت در تولید، نظارت بر کیفیت و مشتری مداری در مجموعه ما باعث گسترش بازار این شرکت در داخل و خارج از کشور گردیده است
             کسب تجربیات ارزشمند ما از بودن در کنار شما بدست آمده است. هم اکنون به کمک این دوستان و همت مدیران، مفتخر به کسب گواهینامه های بین المللی در مدیریت کیفیت تولید گردیده‌ایم
             ما همواره درتلاش هستیم تا با کسب تجربیات خود و ارتقاع سطح علمی نیاز بازار ایران را بهتر از گذشته تامین نمایم</p>
     </div>
-    <div style="width:46%;text-align:center;">
+    <div style="text-align:center;">
         <img src="img/logo/ff.jpg" style="width: 90%;border-radius: 10px;border: 1px solid silver;">
     </div>
 </div>
@@ -49,7 +49,7 @@
 <div class="five-way">
     <div class="div-svg">
         <image src="img/svg/call.svg" class="five-svg" />
-        <div>تماس با واحد فروش</div>
+        <h2>تماس با واحد فروش</h2>
         <p>ارتباط با مشاوران فروش جهت مشاوره و خرید از طریق تماس با شماره 91001020-051 امکان پذیر است</p>
     </div>
     <div class="feleshofogh-svg">
@@ -57,7 +57,7 @@
     </div>
     <div class="div-svg">
         <image src="img/svg/tik.svg" class="five-svg" />
-        <div>صدور پیش فاکتور</div>
+        <h2>صدور پیش فاکتور</h2>
         <p>30 دقیقه بعد مشاور فروش پیش فاکتور را ارسال می کند و در صورت زمان بر بودن درخواست، سریعا به اطلاع شما می رسد.</p>
     </div>
     <div class="feleshofogh-svg">
@@ -65,7 +65,7 @@
     </div>
     <div class="div-svg">
         <image src="img/svg/truck.svg" class="five-svg" />
-        <div>بارگیری و حمل</div>
+        <h2>بارگیری و حمل</h2>
         <p>کالاهای تایید کیفیت شده، پس از بارگیری، براساس نرخ مصوب و مورد تایید شما، به مقصد ارسال می شود.</p>
     </div>
     <div class="feleshofogh-svg">
@@ -73,7 +73,7 @@
     </div>
     <div class="div-svg">
         <image src="img/svg/pay.svg" class="five-svg" />
-        <div>تسویه حساب</div>
+        <h2>تسویه حساب</h2>
         <p>براساس مفاد پیش فاکتور و توافق حاصله، تسویه حساب به صورت نقدی یا اعتباری انجام می شود.</p>
     </div>
     <div class="feleshofogh-svg">
@@ -81,7 +81,7 @@
     </div>
     <div class="div-svg">
         <image src="img/svg/rasmy.svg" class="five-svg" />
-        <div>صدور فاکتور</div>
+        <h2>صدور فاکتور</h2>
         <p>پس از مشخص شدن ارزش دقیق خرید شما، تسویه نهایی صورت گرفته و فاکتور رسمی خرید شما چاپ و ارسال می گردد.</p>
     </div>
 </div>
@@ -130,7 +130,7 @@
 <div class="five-way">
     <div class="div-svg">
         <image src="img/svg/earth.svg" class="five-svg" />
-        <div>سفارش آنلاین</div>
+        <h2>سفارش آنلاین</h2>
         <p>سفارش آنلاین، به شما امکان می‌دهد تا به راحتی و با اطمینان کامل، محصولات مورد نیاز خود را از طریق اینترنت سفارش دهید.</p>
     </div>
     <div class="feleshofogh-svg">
@@ -138,7 +138,7 @@
     </div>
     <div class="div-svg">
         <image src="img/svg/phone.svg" class="five-svg" />
-        <div>تماس ما با شما</div>
+        <h2>تماس ما با شما</h2>
         <p>پس از ثبت سفارش کارشناسان ما بمنظور نهایی شدن سفارش و بررسی روش پرداخت، در اسرع وقت با شما تماس میگیرند.</p>
     </div>
     <div class="feleshofogh-svg">
@@ -146,7 +146,7 @@
     </div>
     <div class="div-svg">
         <image src="img/svg/truck.svg" class="five-svg" />
-        <div>بارگیری و حمل</div>
+        <h2>بارگیری و حمل</h2>
         <p>کالاهای تایید کیفیت شده، پس از بارگیری، براساس نرخ مصوب و مورد تایید شما، به مقصد ارسال می شود.</p>
     </div>
     <div class="feleshofogh-svg">
@@ -154,7 +154,7 @@
     </div>
     <div class="div-svg">
         <image src="img/svg/pay.svg" class="five-svg" />
-        <div>تسویه حساب</div>
+        <h2>تسویه حساب</h2>
         <p>براساس مفاد پیش فاکتور و توافق حاصله، تسویه حساب به صورت نقدی یا اعتباری انجام می شود.</p>
     </div>
     <div class="feleshofogh-svg">
@@ -162,28 +162,13 @@
     </div>
     <div class="div-svg">
         <image src="img/svg/rasmy.svg" class="five-svg" />
-        <div>صدور فاکتور</div>
+        <h2>صدور فاکتور</h2>
         <p>پس از مشخص شدن ارزش دقیق خرید شما، تسویه نهایی صورت گرفته و فاکتور رسمی خرید شما چاپ و ارسال می گردد.</p>
     </div>
 </div>
 
 <div class="slider" x-data="{start: true, end: false}">
-    <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
-        @foreach($products as $product)
-            <div class="slider__item">
-                <img class="slider__image" src="{{$product->image}}" alt="Image">
-                <div class="slider__info">
-                    <h2 x-ref="add{{$product->id}}">{{$product->name}}</h2>
-                    @if($product->isnew)
-                    <span class="icon-new ticket"></span>
-                    @endif
-                    <p>{{$product->explanation}}</p>
-                    <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.add{{$product->id}}.innerHTML);$el.classList.add('avoid-clicks');$el.innerHTML = 'انجام شد';">اضافه به سبد</div>
-                </div>
-            </div>
-        @endforeach
-    </div>
-    <div style="margin:auto 2%;text-align: center;max-width: 20%;">
+    <div style="">
         <h1>محصولات</h1>
         <p>
             درصورتی که قصد خرید محصولات را دارید،بعد از انتخاب کالا آن را به سبد خرید خود اضافه کنید.سپس به ابتدای صفحه بروید،روی
@@ -198,6 +183,21 @@
             <span class="icon-arrow-left slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'"></span>
             <span class="icon-arrow-right slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'"></span>
         </div>
+    </div>
+    <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+        @foreach($products as $product)
+            <div class="slider__item">
+                <img class="slider__image" src="{{$product->image}}" alt="Image">
+                <div class="slider__info">
+                    <h2 x-ref="add{{$product->id}}">{{$product->name}}</h2>
+                    @if($product->isnew)
+                    <span class="icon-new ticket"></span>
+                    @endif
+                    <p>{{$product->explanation}}</p>
+                    <div class="more" @click="$store.perorder.on++;$store.perorder.Arraya.push($refs.add{{$product->id}}.innerHTML);$el.classList.add('avoid-clicks');$el.innerHTML = 'انجام شد';">اضافه به سبد</div>
+                </div>
+            </div>
+        @endforeach
     </div>
 </div>
 

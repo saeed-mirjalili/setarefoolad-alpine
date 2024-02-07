@@ -22,7 +22,7 @@
 
 
         <div class="top-of-navbar">
-            <div style="display: flex;width: 30%;align-items: center;">
+            <div style="display: flex;width: 20%;align-items: center;">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 256.48 246.36" style="enable-background:new 0 0 256.48 246.36;width:30%;" xml:space="preserve">
                     <style type="text/css">
@@ -41,7 +41,7 @@
                 </svg>
                 <span style="font-size: 2vw;font-family: fantasy;">setare foolad</span>
             </div>
-            <div style="    width: 30vw;">
+            <div style="width: 30%;">
                 <input type="text" placeholder="جستجو ..." class="search-input">
             </div>
             <div class="icon">
@@ -60,7 +60,7 @@
                 <li><a href="#about">تماس با ما</a></li>
                 
             </ul>
-            <div style="display:flex;margin: 0px 1rem;" class="navbar-login">
+            <div style="" class="navbar-login">
                     @if (Route::has('login'))
                         @auth()
                             <div style="position: relative;" x-cloak x-data="{open:false}">
@@ -143,7 +143,7 @@
                 <h3>درباره ستاره فولاد</h3>
                 <p style="display:flex;">
                     برادران نیک باف در سال1380  با تاسیس شرکت بازرگانی بنام تجاری نیک باف ,در زمینه صادرات کالاهای ساختمانی به کشورهای cis  فعالیت خود را آغاز کرد و با کمک تجربه چندین ساله مدیران این شرکت در زمینه بازرگانی و صادرات , موفق به کسب رتبه اول در میان صادرکنندگان استان خراسان رضوی در سال 1395 گردیدند.در امتداد راه این شرکت به لطف تلاش گروهی و انگیره پیشرفت روز افزون و بهره گیری از نیروهای جوان و تحصیل کرده و با هدف تامین نیاز بازار داخلی در سال 1399  اقدام به تاسیس شرکت تولیدی و بازرگانی ستاره فولاد آسیا در زمینه تولید لوله و پروفیل در شهرک صنعتی بینالود استان خراسان رضوی گردید.
-                    <img src="/img/logo/d-min.png" style="width: 5vw;height:5vw;float: left;">
+                    <img src="/img/logo/d-min.png" style="width: 10%;height:10%;float: left;">
                 </p>
             </div>
 

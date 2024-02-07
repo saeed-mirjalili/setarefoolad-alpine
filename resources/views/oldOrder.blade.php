@@ -8,9 +8,9 @@
 
 @include('profile.user.menu')
 
-<div style="display:flex;justify-content: space-evenly;">
+<div class="old-sell">
     @foreach($orders as $date => $items)
-        <div style="background-color: #24324c;padding: 20px;border-radius: 15px;">
+        <div class="form-login">
             <table>
                 <tr>
                     <td colspan="2">{{ $date }}</td>

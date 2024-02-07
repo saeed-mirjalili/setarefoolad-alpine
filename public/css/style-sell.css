@@ -1,4 +1,4 @@
-.menuProfile{
+.menuProfile {
     display: flex;
     justify-content: space-around;
     padding: 20px;
@@ -6,7 +6,7 @@
     margin: auto;
 }
 
-.menuProfile div{
+.menuProfile div {
     padding: 1vw;
     border-radius: 5px;
     width: 19%;
@@ -17,27 +17,49 @@
     align-items: center;
 }
 
-.menuProfile div:nth-child(1) span{
+.menuProfile div:nth-child(1) span {
     background-color: darkgreen;
     padding: 0.3vw;
     font-size: 2vw;
     border-radius: 0.5vw;
 }
-.menuProfile div:nth-child(2) span{
+.menuProfile div:nth-child(2) span {
     background-color: rgb(133 129 31);
     padding: 0.3vw;
     font-size: 2vw;
     border-radius: 0.5vw;
 }
-.menuProfile div:nth-child(3) span{
+.menuProfile div:nth-child(3) span {
     background-color: rgb(184, 51, 42);
     padding: 0.3vw;
     font-size: 2vw;
     border-radius: 0.5vw;
 }
-.menuProfile div:nth-child(4) span{
+.menuProfile div:nth-child(4) span {
     background-color: rgb(39 129 133);
     padding: 0.3vw;
     font-size: 2vw;
     border-radius: 0.5vw;
+}
+
+.form-login {
+    width: 23%;
+    margin: 2% auto;
+    background: #152035;
+    border-radius: 15px;
+    padding: 3%;
+}
+
+.old-sell {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 660px) {
+    .old-sell {
+        flex-direction: column;
+    }
+    .form-login {
+        width: 60%;
+    }
 }

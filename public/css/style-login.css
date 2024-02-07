@@ -39,7 +39,12 @@
 
 button.auth-auto {
     font-family: body;
-    font-size: 0.8vw;
     width: fit-content;
     margin: auto;
+}
+
+@media screen and (max-width: 660px) {
+    .form-login {
+        width: 41%;
+    }
 }
